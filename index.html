@@ -880,12 +880,18 @@ function showFact(i) {
 }, 300);
 
 // inicializácia
-showFact(index);
+showFact(shuffledIndexes[currentIndex]);
 
 // rotácia každých 5 sekúnd
 setInterval(() => {
-  index = (index + 1) % facts.length;
-  showFact(index);
+  currentIndex++;
+
+  // Ak sme zobrazili všetky fakty, premiešame ich znova
+  if (currentIndex >= shuffledIndexes.length) {
+    shuffleFacts();
+  }
+
+  showFact(shuffledIndexes[currentIndex]);
 }, 5000);
 </script>
 
