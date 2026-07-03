@@ -446,7 +446,9 @@ function showFact(i) {
   text.classList.add("fade");
 
   setTimeout(() => {
-    category.textContent = "Vedeli ste že: " + fact.category;
+    category.innerHTML =
+  "Vedeli ste že:<br>" +
+  "<strong>" + fact.category + "</strong>";
     icon.textContent = fact.icon;
     text.textContent = fact.text;
 
