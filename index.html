@@ -866,18 +866,18 @@ function showFact(i) {
   text.classList.add("fade");
 
   setTimeout(() => {
-category.innerHTML =
-  "Vedeli ste že:<br>" +
-  "<span style='font-size:18px; color:red; font-weight:800; display:block; margin-top:4px;'>" +
-  fact.category +
-  "</span>";
+  category.innerHTML =
+    "<span style='font-size:18px; color:red; font-weight:800;'>Vedeli ste že:</span><br>" +
+    "<span style='color:#6EC6E8; font-weight:bold;'>" + fact.category + "</span>";
 
-    // fade in
-    category.classList.remove("fade");
-    icon.classList.remove("fade");
-    text.classList.remove("fade");
-  }, 300);
-}
+  icon.textContent = fact.icon;
+  text.textContent = fact.text;
+
+  // fade in
+  category.classList.remove("fade");
+  icon.classList.remove("fade");
+  text.classList.remove("fade");
+}, 300);
 
 // inicializácia
 showFact(index);
