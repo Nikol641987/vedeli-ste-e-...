@@ -878,17 +878,12 @@ const facts = [
 ];
  výber 2 rôznych faktov pre dnešok
 function getDailyIndexes() {
-  const today = new Date().toDateString();
+  const day = Math.floor(Date.now() / 86400000);
 
-  let seed = 0;
-  for (let i = 0; i < today.length; i++) {
-    seed += today.charCodeAt(i);
-  }
+  const i1 = day % facts.length;
+  let i2 = (day * 3) % facts.length;
 
-  const i1 = seed % facts.length;
-  let i2 = (seed * 7) % facts.length;
-
-  if (i2 === i1) i2 = (i2 + 1) % facts.length;
+  if (i1 === i2) i2 = (i2 + 1) % facts.length;
 
   return [i1, i2];
 }
@@ -896,6 +891,13 @@ function getDailyIndexes() {
 function showFacts(i1, i2) {
   const f1 = facts[i1];
   const f2 = facts[i2];
+
+  console.log("DEBUG:", f1, f2); // 👈 pridaj toto
+
+  if (!f1 || !f2) {
+    console.error("Chýbajú fakty:", i1, i2);
+    return;
+  }
 
   document.getElementById("category1").textContent = f1.category;
   document.getElementById("icon1").textContent = f1.icon;
