@@ -1,3 +1,8 @@
+--primary: #444;
+--secondary: #6EC6E8;
+--background: #F7FAFC;
+--card: #FFFFFF;
+--text: #333333;
 {
   "facts": [
     {
