@@ -438,19 +438,23 @@ let index = 0;
 function showFact(i) {
   const fact = facts[i];
 
-  const category = document.getElementById("category").textContent =
-  "Vedeli ste že: " + fact.category;
+  const category = document.getElementById("category");
   const icon = document.getElementById("icon");
   const text = document.getElementById("text");
 
   // fade out
+  category.classList.add("fade");
+  icon.classList.add("fade");
   text.classList.add("fade");
 
   setTimeout(() => {
-    category.textContent = fact.category;
+    category.textContent = "Vedeli ste že: " + fact.category;
     icon.textContent = fact.icon;
     text.textContent = fact.text;
 
+    // fade in
+    category.classList.remove("fade");
+    icon.classList.remove("fade");
     text.classList.remove("fade");
   }, 300);
 }
