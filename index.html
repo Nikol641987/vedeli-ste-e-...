@@ -876,48 +876,40 @@ const facts = [
     "text": "Kvalita je výsledkom spolupráce výroby, laboratória, údržby, logistiky aj ďalších oddelení."
     }
 ];
-let index = 0;
+ výber 2 rôznych faktov pre dnešok
+function getDailyIndexes() {
+  const today = new Date().toDateString();
 
-function showFact(i) {
-  const fact = facts[i];
-
-  const category = document.getElementById("category");
-  const icon = document.getElementById("icon");
-  const text = document.getElementById("text");
-
-  // fade out
-  category.classList.add("fade");
-  icon.classList.add("fade");
-  text.classList.add("fade");
-
-  setTimeout(() => {
-  category.innerHTML =
-    "<span style='font-size:18px; color:red; font-weight:800;'>Vedeli ste že:</span><br>" +
-    "<span style='color:#6EC6E8; font-weight:bold;'>" + fact.category + "</span>";
-
-  icon.textContent = fact.icon;
-  text.textContent = fact.text;
-
-  // fade in
-  category.classList.remove("fade");
-  icon.classList.remove("fade");
-  text.classList.remove("fade");
-}, 300);
-
-// inicializácia
-showFact(shuffledIndexes[currentIndex]);
-
-// rotácia každých 5 sekúnd
-setInterval(() => {
-  currentIndex++;
-
-  // Ak sme zobrazili všetky fakty, premiešame ich znova
-  if (currentIndex >= shuffledIndexes.length) {
-    shuffleFacts();
+  let seed = 0;
+  for (let i = 0; i < today.length; i++) {
+    seed += today.charCodeAt(i);
   }
 
-  showFact(shuffledIndexes[currentIndex]);
-}, 5000);
+  const i1 = seed % facts.length;
+  let i2 = (seed * 7) % facts.length;
+
+  if (i2 === i1) i2 = (i2 + 1) % facts.length;
+
+  return [i1, i2];
+}
+
+function showFacts(i1, i2) {
+  const f1 = facts[i1];
+  const f2 = facts[i2];
+
+  document.getElementById("category1").textContent = f1.category;
+  document.getElementById("icon1").textContent = f1.icon;
+  document.getElementById("text1").textContent = f1.text;
+
+  document.getElementById("category2").textContent = f2.category;
+  document.getElementById("icon2").textContent = f2.icon;
+  document.getElementById("text2").textContent = f2.text;
+}
+
+// INIT
+const [i1, i2] = getDailyIndexes();
+showFacts(i1, i2);
+
 </script>
 
 </body>
