@@ -1,21 +1,91 @@
+✅ HOTOVÁ INTRANET VERZIA (OKIENKO)
+
+👉 COPY-PASTE CELÉ:
+
 <!DOCTYPE html>
 <html lang="sk">
 <head>
 <meta charset="UTF-8">
-<title>TEST</title>
+<title>Vedeli ste že</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: transparent;
+}
+
+/* === OKIENKO === */
+.widget {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 14px;
+  padding: 20px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  border-left: 6px solid #6EC6E8;
+}
+
+/* HEADER */
+.header {
+  font-size: 20px;
+  font-weight: 800;
+  color: #d62828;
+  margin-bottom: 15px;
+}
+
+/* FACT BLOK */
+.fact {
+  margin-bottom: 15px;
+}
+
+.category {
+  font-size: 13px;
+  font-weight: bold;
+  color: #6EC6E8;
+  margin-bottom: 4px;
+}
+
+.icon {
+  font-size: 28px;
+  margin-bottom: 4px;
+}
+
+.text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: #333;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid #eee;
+  margin: 15px 0;
+}
+</style>
 </head>
 
 <body>
 
-<div id="cat1"></div>
-<div id="icon1"></div>
-<div id="text1"></div>
+<div class="widget">
 
-<hr>
+  <div class="header">Vedeli ste že?</div>
 
-<div id="cat2"></div>
-<div id="icon2"></div>
-<div id="text2"></div>
+  <div class="fact">
+    <div id="cat1" class="category"></div>
+    <div id="icon1" class="icon"></div>
+    <div id="text1" class="text"></div>
+  </div>
+
+  <hr>
+
+  <div class="fact">
+    <div id="cat2" class="category"></div>
+    <div id="icon2" class="icon"></div>
+    <div id="text2" class="text"></div>
+  </div>
+
+</div>
 
 <script>
 
