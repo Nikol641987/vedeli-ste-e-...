@@ -2,98 +2,23 @@
 <html lang="sk">
 <head>
 <meta charset="UTF-8">
-<title>Fakty o vode</title>
-
-<style>
-:root {
-  --primary: #444;
-  --secondary: #6EC6E8;
-  --background: #F7FAFC;
-  --card: #FFFFFF;
-  --text: #333333;
-}
-
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: var(--background);
-  color: var(--text);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.widget {
-  width: 420px;
-  background: var(--card);
-  border-radius: 16px;
-  padding: 24px;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-  text-align: center;
-  border-left: 6px solid var(--secondary);
-}
-
-.header {
-  font-size: 24px;
-  font-weight: bold;
-  color: #d62828;
-  margin-bottom: 20px;
-}
-
-.fact {
-  margin: 15px 0;
-}
-
-.category {
-  font-size: 14px;
-  color: var(--secondary);
-  font-weight: bold;
-  margin-bottom: 5px;
-}
-
-.icon {
-  font-size: 40px;
-  margin-bottom: 5px;
-}
-
-.text {
-  font-size: 16px;
-  line-height: 1.5;
-}
-
-hr {
-  border: none;
-  border-top: 1px solid #ddd;
-  margin: 20px 0;
-}
-</style>
+<title>TEST</title>
 </head>
 
 <body>
 
-<div class="widget">
+<div id="cat1"></div>
+<div id="icon1"></div>
+<div id="text1"></div>
 
-  <div class="header">Vedeli ste že?</div>
+<hr>
 
-  <div class="fact">
-    <div class="category" id="category1"></div>
-    <div class="icon" id="icon1"></div>
-    <div class="text" id="text1"></div>
-  </div>
-
-  <hr>
-
-  <div class="fact">
-    <div class="category" id="category2"></div>
-    <div class="icon" id="icon2"></div>
-    <div class="text" id="text2"></div>
-  </div>
-
-</div>
+<div id="cat2"></div>
+<div id="icon2"></div>
+<div id="text2"></div>
 
 <script>
-// DÁTA
+
 const facts = [
   {
     id: 1,
