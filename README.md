@@ -1,1 +1,771 @@
-# vedeli-ste-e-...
+{
+  "facts": [
+    {
+      "id": 1,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Prírodná minerálna voda pochádza z podzemného zdroja, ktorý je chránený pred znečistením."
+    },
+    {
+      "id": 2,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálne látky vo vode sa do nej dostávajú prirodzeným kontaktom s horninami počas jej cesty pod zemou."
+    },
+    {
+      "id": 3,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Nie každá balená voda je minerálna voda. Existujú aj pramenité a stolové vody."
+    },
+    {
+      "id": 4,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Zloženie prírodnej minerálnej vody musí zostať prirodzene stabilné."
+    },
+    {
+      "id": 5,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Niektoré minerálne vody putujú pod zemou desiatky až stovky rokov, kým sa dostanú na povrch."
+    },
+    {
+      "id": 6,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každý prírodný minerálny prameň má svoje jedinečné minerálne zloženie."
+    },
+    {
+      "id": 7,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Chuť minerálnej vody ovplyvňuje najmä obsah minerálnych látok a oxidu uhličitého."
+    },
+    {
+      "id": 8,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Vápnik patrí medzi najčastejšie zastúpené minerály v prírodných minerálnych vodách."
+    },
+    {
+      "id": 9,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Horčík prispieva k správnemu fungovaniu svalov a nervového systému."
+    },
+    {
+      "id": 10,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Oxid uhličitý môže byť vo vode prirodzene prítomný alebo sa môže pridávať pri plnení podľa typu výrobku."
+    },
+    {
+      "id": 11,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každý prírodný prameň je pravidelne monitorovaný z hľadiska kvality a zdravotnej nezávadnosti."
+    },
+    {
+      "id": 12,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Voda je jediná látka, ktorá sa na Zemi prirodzene vyskytuje v pevnom, kvapalnom aj plynnom skupenstve."
+    },
+    {
+      "id": 13,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Približne 71 % povrchu Zeme pokrýva voda."
+    },
+    {
+      "id": 14,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Len približne 3 % všetkej vody na Zemi tvoria sladké vody."
+    },
+    {
+      "id": 15,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Veľká časť sladkej vody je uložená v ľadovcoch alebo hlboko pod zemou."
+    },
+    {
+      "id": 16,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Ľudské telo tvorí približne 60 % voda."
+    },
+    {
+      "id": 17,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Mozog obsahuje približne tri štvrtiny vody."
+    },
+    {
+      "id": 18,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Aj mierna dehydratácia môže znížiť schopnosť sústredenia."
+    },
+    {
+      "id": 19,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Pocit smädu je signálom, že telo už začína pociťovať nedostatok tekutín."
+    },
+    {
+      "id": 20,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Voda pomáha regulovať telesnú teplotu prostredníctvom potenia."
+    },
+    {
+      "id": 21,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Prírodná minerálna voda nesmie pochádzať z upravovaného mestského vodovodu."
+    },
+    {
+      "id": 22,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každý zdroj minerálnej vody má vlastné hydrogeologické podmienky."
+    },
+    {
+      "id": 23,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Niektoré minerálne vody prirodzene obsahujú viac vápnika, iné viac horčíka alebo hydrogénuhličitanov."
+    },
+    {
+      "id": 24,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálne látky dodávajú vode jej charakteristickú chuť."
+    },
+    {
+      "id": 25,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každá šarža balenej minerálnej vody musí spĺňať prísne legislatívne požiadavky."
+    },
+    {
+      "id": 26,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Kvalita vody sa kontroluje ešte pred samotným plnením."
+    },
+    {
+      "id": 27,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálna voda neobsahuje kalórie ani cukor, pokiaľ nejde o ochutený nápoj."
+    },
+    {
+      "id": 28,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Perlivá voda získava typické bublinky vďaka oxidu uhličitému."
+    },
+    {
+      "id": 29,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Teplota vody môže ovplyvniť vnímanie jej chuti."
+    },
+    {
+      "id": 30,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Niektoré pramene sú známe a využívané už celé stáročia."
+    },
+    {
+      "id": 31,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Slovensko patrí medzi krajiny bohaté na prírodné minerálne pramene."
+    },
+    {
+      "id": 32,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálne vody sa od seba odlišujú obsahom jednotlivých minerálnych látok."
+    },
+    {
+      "id": 33,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Pramene vznikajú tam, kde sa podzemná voda prirodzene dostáva na zemský povrch."
+    },
+    {
+      "id": 34,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Voda je najkonzumovanejší nápoj na svete."
+    },
+    {
+      "id": 35,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Bez vody by človek prežil len niekoľko dní."
+    },
+    {
+      "id": 36,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Dostatok tekutín podporuje správne fungovanie organizmu počas celého dňa."
+    },
+    {
+      "id": 37,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálne vody sa môžu líšiť aj prirodzeným obsahom oxidu uhličitého."
+    },
+    {
+      "id": 38,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každá etiketa obsahuje informácie o minerálnom zložení vody."
+    },
+    {
+      "id": 39,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Niektoré minerálne vody majú vyšší obsah hydrogénuhličitanov, ktoré ovplyvňujú ich chuť."
+    },
+    {
+      "id": 40,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každá fľaša minerálnej vody začína svoju cestu pri prírodnom zdroji."
+    },
+    {
+      "id": 41,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Voda je súčasťou každého metabolického procesu v ľudskom tele."
+    },
+    {
+      "id": 42,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Pravidelný pitný režim pomáha udržiavať optimálnu výkonnosť organizmu."
+    },
+    {
+      "id": 43,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Obsah minerálnych látok vo vode sa uvádza v miligramoch na liter."
+    },
+    {
+      "id": 44,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Prírodná minerálna voda môže mať rôzne prirodzené zloženie aj v rámci jednej krajiny."
+    },
+    {
+      "id": 45,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každý prameň má svoju vlastnú geologickú históriu."
+    },
+    {
+      "id": 46,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Podzemná voda sa filtruje prirodzene cez vrstvy hornín."
+    },
+    {
+      "id": 47,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Niektoré minerálne vody obsahujú prirodzene vyšší obsah sodíka, iné len minimálny."
+    },
+    {
+      "id": 48,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Voda zohráva dôležitú úlohu pri prenose živín v organizme."
+    },
+    {
+      "id": 49,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálne zloženie vody je výsledkom dlhodobých prírodných procesov."
+    },
+    {
+      "id": 50,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každá prírodná minerálna voda má svoj jedinečný charakter."
+    },
+    {
+      "id": 51,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Voda patrí medzi najdôležitejšie obnoviteľné prírodné zdroje."
+    },
+    {
+      "id": 52,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Hydratácia je dôležitá počas celého roka, nielen v lete."
+    },
+    {
+      "id": 53,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Prirodzené minerálne zloženie vody ovplyvňuje aj jej celkovú tvrdosť."
+    },
+    {
+      "id": 54,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Niektoré minerálne vody sa vyznačujú jemnou chuťou, iné výraznejším minerálnym profilom."
+    },
+    {
+      "id": 55,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Prírodné zdroje minerálnych vôd patria medzi významné prírodné bohatstvo Slovenska."
+    },
+    {
+      "id": 56,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Ochrana prameňov je dôležitou súčasťou ochrany životného prostredia."
+    },
+    {
+      "id": 57,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každá kvapka minerálnej vody prešla prírodným filtračným procesom v horninách."
+    },
+    {
+      "id": 58,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Pravidelné analýzy zabezpečujú, že voda spĺňa požadované parametre kvality."
+    },
+    {
+      "id": 59,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Minerálna voda je prírodný produkt, ktorého kvalita závisí od samotného zdroja."
+    },
+    {
+      "id": 60,
+      "category": "Minerálna voda",
+      "icon": "💧",
+      "text": "Každý prírodný prameň rozpráva vlastný príbeh vytvorený geológiou a časom."
+    }
+  ]
+}
+[
+  {
+    "id": 61,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pred začiatkom výroby sa plniace zariadenia čistia a sanitujú podľa schválených postupov."
+  },
+  {
+    "id": 62,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pri výrobe minerálnych vôd je dôležité zachovať prirodzené vlastnosti vody od zdroja až po naplnenie."
+  },
+  {
+    "id": 63,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Plniace linky dokážu spracovať tisíce fliaš za hodinu pri zachovaní vysokej presnosti."
+  },
+  {
+    "id": 64,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá výrobná šarža musí byť identifikovateľná, aby bolo možné dohľadať jej históriu.
+  },
+  {
+    "id": 66,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Správne nastavenie plniacej hladiny pomáha zabezpečiť konzistentný objem v každej fľaši."
+  },
+  {
+    "id": 67,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pri sýtených nápojoch ovplyvňuje teplota produktu rozpustnosť oxidu uhličitého."
+  },
+  {
+    "id": 68,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každý uzáver musí byť správne nasadený, aby bola zachovaná tesnosť balenia."
+  },
+  {
+    "id": 69,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Automatické senzory dokážu počas výroby odhaliť odchýlky v procese v reálnom čase."
+  },
+  {
+    "id": 70,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobné linky sú navrhnuté tak, aby minimalizovali kontakt produktu s okolitým prostredím."
+  },
+  {
+    "id": 71,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Preventívna údržba pomáha predchádzať neplánovaným odstávkam výroby."
+  },
+  {
+    "id": 72,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá zmena formátu balenia si vyžaduje presné nastavenie výrobných zariadení."
+  },
+  {
+    "id": 73,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Etiketa musí byť umiestnená správne, aby boli všetky informácie čitateľné pre spotrebiteľa."
+  },
+  {
+    "id": 75,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Automatická kontrola vie odhaliť chýbajúci uzáver alebo nesprávne nalepenú etiketu."
+  },
+  {
+    "id": 76,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobný proces je navrhnutý tak, aby zabezpečil opakovateľnú kvalitu každého výrobku."
+  },
+  {
+    "id": 77,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Dôsledná hygiena zariadení patrí medzi základné podmienky bezpečnej výroby potravín."
+  },
+  {
+    "id": 78,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá výrobná linka má stanovené parametre, ktoré sa počas výroby sledujú."
+  },
+  {
+    "id": 79,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pri plnení minerálnej vody je dôležité zachovať stabilitu produktu počas celého procesu."
+  },
+  {
+    "id": 80,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobné dáta pomáhajú identifikovať príležitosti na zvyšovanie efektivity."
+  },
+  {
+    "id": 81,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Paletizácia umožňuje bezpečnú manipuláciu s výrobkami počas skladovania a prepravy."
+  },
+  {
+    "id": 82,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá odstávka výroby sa analyzuje s cieľom predchádzať jej opakovaniu."
+  },
+  {
+    "id": 83,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Správne nastavený výrobný proces pomáha znižovať množstvo odpadu."
+  },
+  {
+    "id": 85,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Moderné výrobné závody využívajú automatizáciu na zvýšenie stability a efektivity výroby."
+  }
+][
+  {
+    "id": 86,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá výrobná šarža má pridelené jedinečné označenie, ktoré umožňuje jej úplnú sledovateľnosť."
+  },
+  {
+    "id": 87,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobné zariadenia sú pravidelne kontrolované a kalibrované, aby pracovali s požadovanou presnosťou."
+  },
+  {
+    "id": 88,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Stabilná teplota vo výrobe pomáha udržiavať konzistentnú kvalitu výrobkov."
+  },
+  {
+    "id": 89,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Aj krátke neplánované zastavenie linky môže ovplyvniť celkovú efektivitu výroby."
+  },
+  {
+    "id": 90,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Automatické dopravníky zabezpečujú plynulý pohyb fliaš medzi jednotlivými časťami výrobnej linky."
+  },
+  {
+    "id": 91,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Správne nastavenie dopravníkov pomáha predchádzať poškodeniu obalov počas výroby."
+  },
+  {
+    "id": 92,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výroba potravín sa riadi presne definovanými pracovnými postupmi, ktoré zabezpečujú opakovateľnú kvalitu."
+  },
+  {
+    "id": 93,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá zmena výrobného programu si vyžaduje dôkladnú prípravu linky a materiálu."
+  },
+  {
+    "id": 94,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Správna organizácia pracoviska pomáha zvyšovať bezpečnosť aj efektivitu výroby."
+  },
+  {
+    "id": 95,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobné procesy sa priebežne vyhodnocujú s cieľom odhaľovať možnosti ďalšieho zlepšovania."
+  },
+  {
+    "id": 96,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pravidelné školenia zamestnancov pomáhajú udržiavať vysoký štandard výrobných procesov."
+  },
+  {
+    "id": 97,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Presné plánovanie výroby pomáha zabezpečiť plynulé zásobovanie zákazníkov."
+  },
+  {
+    "id": 98,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobná linka môže obsahovať desiatky senzorov, ktoré nepretržite monitorujú jej správnu činnosť."
+  },
+  {
+    "id": 99,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pravidelné čistenie výrobných priestorov pomáha udržiavať vysokú úroveň hygieny."
+  },
+  {
+    "id": 100,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Správne skladovanie obalových materiálov je dôležité pre zachovanie ich kvality pred použitím."
+  },
+  {
+    "id": 101,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Pri výrobe minerálnych vôd sa využívajú materiály určené na styk s potravinami."
+  },
+  {
+    "id": 102,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Automatické kamerové systémy dokážu skontrolovať tisíce fliaš za hodinu."
+  },
+  {
+    "id": 103,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Minimalizácia prestojov patrí medzi hlavné ciele efektívne riadenej výroby."
+  },
+  {
+    "id": 104,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každý pracovník vo výrobe prispieva svojou prácou ku konečnej kvalite výrobku."
+  },
+  {
+    "id": 105,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobná dokumentácia umožňuje spätne dohľadať priebeh každej vyrobenej šarže."
+  },
+  {
+    "id": 106,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Správne nastavenie výrobnej linky pomáha znižovať spotrebu materiálu aj energie."
+  },
+  {
+    "id": 107,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Kontinuálne zlepšovanie výrobných procesov je dôležitou súčasťou moderného potravinárstva."
+  },
+  {
+    "id": 108,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Výrobné zariadenia sú navrhnuté tak, aby umožňovali ich dôkladné čistenie a sanitáciu."
+  },
+  {
+    "id": 109,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Každá úspešne naplnená fľaša je výsledkom spolupráce výroby, údržby, kvality, logistiky aj ďalších oddelení."
+  },
+  {
+    "id": 110,
+    "category": "Výroba",
+    "icon": "🏭",
+    "text": "Spoľahlivá výroba vzniká kombináciou kvalitnej technológie, dobre nastavených procesov a skúsených ľudí."
+  }
+]
+[
+  {
+    "id": 111,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Kvalita minerálnej vody sa kontroluje od samotného zdroja až po hotový výrobok."
+  },
+  {
+    "id": 112,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Vzorky vody sa pravidelne analyzujú, aby spĺňali požiadavky platnej legislatívy."
+  },
+  {
+    "id": 113,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Mikrobiologické analýzy pomáhajú overiť zdravotnú bezpečnosť výrobkov."
+  },
+  {
+    "id": 114,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Laboratóriá pri analýzach používajú kalibrované meracie prístroje, aby boli výsledky čo najpresnejšie."
+  },
+  {
+    "id": 115,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Každá šarža výrobkov musí spĺňať stanovené kvalitatívne požiadavky pred uvedením na trh."
+  },
+  {
+    "id": 116,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Kontrola kvality zahŕňa fyzikálne, chemické aj mikrobiologické parametre."
+  },
+  {
+    "id": 117,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Jedným z cieľov systému kvality je predchádzať chybám ešte predtým, ako vzniknú."
+  },
+  {
+    "id": 118,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Správna evidencia výsledkov meraní umožňuje sledovať vývoj kvality v čase."
+  },
+  {
+    "id": 119,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Odber vzoriek sa vykonáva podľa vopred stanovených postupov."
+  },
+  {
+    "id": 120,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Každý výsledok laboratórnej analýzy je súčasťou systému sledovateľnosti výrobku."
+  },
+  {
+    "id": 121,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "HACCP je systém, ktorý pomáha identifikovať a riadiť riziká ovplyvňujúce bezpečnosť potravín."
+  },
+  {
+    "id": 122,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Správne označenie výrobku je rovnako dôležité ako samotná kvalita jeho obsahu."
+  },
+  {
+    "id": 123,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Kontrola kvality zahŕňa aj overovanie správnosti dátumu minimálnej trvanlivosti a označenia šarže."
+  },
+  {
+    "id": 124,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Kvalita obalu je dôležitá pre ochranu výrobku počas skladovania aj prepravy."
+  },
+  {
+    "id": 125,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Aj malé odchýlky od stanovených parametrov sa preverujú a vyhodnocujú."
+  },
+  {
+    "id": 126,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Meranie pH patrí medzi bežné kontroly pri mnohých potravinárskych výrobkoch."
+  },
+  {
+    "id": 127,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Kontrola kvality sa nevykonáva len na konci výroby, ale počas celého výrobného procesu."
+  },
+  {
+    "id": 128,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Výsledky laboratórnych analýz pomáhajú potvrdzovať stabilitu výrobného procesu."
+  },
+  {
+    "id": 129,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Každá nezhoda sa eviduje a analyzuje, aby sa znížila pravdepodobnosť jej opakovania."
+  },
+  {
+    "id": 130,
+    "category": "Kvalita",
+    "icon": "🧪",
+    "text": "Kvalita je výsledkom spolupráce výroby, laboratória, údržby, logistiky aj ďalších oddelení."
+  }
+]
