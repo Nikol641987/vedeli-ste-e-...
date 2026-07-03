@@ -876,41 +876,34 @@ const facts = [
     "text": "Kvalita je výsledkom spolupráce výroby, laboratória, údržby, logistiky aj ďalších oddelení."
     }
 ];
- výber 2 rôznych faktov pre dnešok
-function getDailyIndexes() {
+// ===== stabilný výber 2 faktov na deň =====
+function getDailyFacts() {
   const day = Math.floor(Date.now() / 86400000);
 
   const i1 = day % facts.length;
-  let i2 = (day * 3) % facts.length;
+  let i2 = (day * 7) % facts.length;
 
   if (i1 === i2) i2 = (i2 + 1) % facts.length;
 
-  return [i1, i2];
+  return [facts[i1], facts[i2]];
 }
 
-function showFacts(i1, i2) {
-  const f1 = facts[i1];
-  const f2 = facts[i2];
+// ===== zobrazenie =====
+function render() {
+  const [f1, f2] = getDailyFacts();
 
-  console.log("DEBUG:", f1, f2); // 👈 pridaj toto
-
-  if (!f1 || !f2) {
-    console.error("Chýbajú fakty:", i1, i2);
-    return;
-  }
-
-  document.getElementById("category1").textContent = f1.category;
+  document.getElementById("cat1").innerHTML =
+    `<span style="color:#d62828;">${f1.category}</span>`;
   document.getElementById("icon1").textContent = f1.icon;
   document.getElementById("text1").textContent = f1.text;
 
-  document.getElementById("category2").textContent = f2.category;
+  document.getElementById("cat2").innerHTML =
+    `<span style="color:#d62828;">${f2.category}</span>`;
   document.getElementById("icon2").textContent = f2.icon;
   document.getElementById("text2").textContent = f2.text;
 }
 
-// INIT
-const [i1, i2] = getDailyIndexes();
-showFacts(i1, i2);
+render();
 
 </script>
 
