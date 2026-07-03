@@ -438,7 +438,8 @@ let index = 0;
 function showFact(i) {
   const fact = facts[i];
 
-  const category = document.getElementById("category");
+  const category = document.getElementById("category").textContent =
+  "Vedeli ste že: " + fact.category;
   const icon = document.getElementById("icon");
   const text = document.getElementById("text");
 
