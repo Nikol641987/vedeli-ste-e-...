@@ -866,11 +866,11 @@ function showFact(i) {
   text.classList.add("fade");
 
   setTimeout(() => {
-    category.innerHTML =
+category.innerHTML =
   "Vedeli ste že:<br>" +
-  "<strong>" + fact.category + "</strong>";
-    icon.textContent = fact.icon;
-    text.textContent = fact.text;
+  "<span style='font-size:18px; color:red; font-weight:800; display:block; margin-top:4px;'>" +
+  fact.category +
+  "</span>";
 
     // fade in
     category.classList.remove("fade");
