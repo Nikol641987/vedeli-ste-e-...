@@ -1999,17 +1999,18 @@ const facts = [
 function getDailyFacts() {
   const now = new Date();
 
-  // 2 bloky za deň
+  // 0 = ráno, 1 = večer
   const block = now.getHours() < 12 ? 0 : 1;
 
-  // počet 12h blokov od začiatku roka
+  // deň v roku (0–365)
   const start = new Date(now.getFullYear(), 0, 1);
-  const blockIndex =
-    Math.floor((now - start) / (1000 * 60 * 60 * 12)) * 2 + block;
+  const dayIndex = Math.floor((now - start) / (1000 * 60 * 60 * 24));
 
-  // CYKLUS (POSTUPNÝ, BEZ RANDOMU)
-  const i1 = blockIndex % facts.length;
-  const i2 = (blockIndex + 1) % facts.length;
+  // 2 fakty na blok → posun o 2
+  const baseIndex = dayIndex * 2 + block * 1;
+
+  const i1 = baseIndex % facts.length;
+  const i2 = (baseIndex + 1) % facts.length;
 
   return [facts[i1], facts[i2]];
 }
