@@ -1997,12 +1997,19 @@ const facts = [
 ];
 // ===== stabilný výber 2 faktov na deň =====
 function getDailyFacts() {
-  const day = Math.floor(Date.now() / 86400000);
+  const now = new Date();
 
-  const i1 = day % facts.length;
-  let i2 = (day * 7) % facts.length;
+  // 2 bloky za deň
+  const block = now.getHours() < 12 ? 0 : 1;
 
-  if (i1 === i2) i2 = (i2 + 1) % facts.length;
+  // počet 12h blokov od začiatku roka
+  const start = new Date(now.getFullYear(), 0, 1);
+  const blockIndex =
+    Math.floor((now - start) / (1000 * 60 * 60 * 12)) * 2 + block;
+
+  // CYKLUS (POSTUPNÝ, BEZ RANDOMU)
+  const i1 = blockIndex % facts.length;
+  const i2 = (blockIndex + 1) % facts.length;
 
   return [facts[i1], facts[i2]];
 }
