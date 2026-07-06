@@ -2002,15 +2002,24 @@ function getDailyFacts() {
   // 0 = ráno, 1 = večer
   const block = now.getHours() < 12 ? 0 : 1;
 
-  // deň v roku (0–365)
   const start = new Date(now.getFullYear(), 0, 1);
   const dayIndex = Math.floor((now - start) / (1000 * 60 * 60 * 24));
 
-  // 2 fakty na blok → posun o 2
-  const baseIndex = dayIndex * 2 + block * 1;
+  const baseIndex = dayIndex * 2 + block;
 
-  const i1 = baseIndex % facts.length;
-  const i2 = (baseIndex + 1) % facts.length;
+  let i1 = baseIndex % facts.length;
+
+  // hľadáme i2 tak, aby mala inú kategóriu
+  let i2 = (i1 + 1) % facts.length;
+
+  let attempts = 0;
+  while (
+    facts[i2].category === facts[i1].category &&
+    attempts < facts.length
+  ) {
+    i2 = (i2 + 1) % facts.length;
+    attempts++;
+  }
 
   return [facts[i1], facts[i2]];
 }
