@@ -2280,15 +2280,16 @@ const baseIndex = halfDayIndex * 2;
 
 // ===== zobrazenie =====
 function render() {
-  const [f1, f2] = getDailyFacts();
+  const result = getDailyFacts();
 
-  document.getElementById("cat1").innerHTML =
-    `<span style="color:#d62828;">${f1.category}</span>`;
+  const f1 = result[0];
+  const f2 = result[1];
+
+  document.getElementById("cat1").textContent = f1.category;
   document.getElementById("icon1").textContent = f1.icon;
   document.getElementById("text1").textContent = f1.text;
 
-  document.getElementById("cat2").innerHTML =
-    `<span style="color:#d62828;">${f2.category}</span>`;
+  document.getElementById("cat2").textContent = f2.category;
   document.getElementById("icon2").textContent = f2.icon;
   document.getElementById("text2").textContent = f2.text;
 }
