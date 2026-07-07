@@ -2252,13 +2252,14 @@ const facts = [
 function getDailyFacts() {
   const now = new Date();
 
-  // 0 = ráno, 1 = večer
-  const block = now.getHours() < 12 ? 0 : 1;
-
   const start = new Date(now.getFullYear(), 0, 1);
-  const dayIndex = Math.floor((now - start) / (1000 * 60 * 60 * 24));
+const dayIndex = Math.floor((now - start) / (1000 * 60 * 60 * 24));
 
-  const baseIndex = dayIndex * 2 + block;
+// počet 12-hodinových blokov od začiatku roka
+const halfDayIndex = dayIndex * 2 + (now.getHours() >= 12 ? 1 : 0);
+
+// každý blok spotrebuje 2 fakty
+const baseIndex = halfDayIndex * 2;
 
   let i1 = baseIndex % facts.length;
 
