@@ -2253,31 +2253,27 @@ function getDailyFacts() {
   const now = new Date();
 
   const start = new Date(now.getFullYear(), 0, 1);
-const dayIndex = Math.floor((now - start) / (1000 * 60 * 60 * 24));
+  const halfDayIndex = Math.floor(
+    (now - start) / (1000 * 60 * 60 * 12)
+  );
 
-// počet 12-hodinových blokov od začiatku roka
-const halfDayIndex = dayIndex * 2 + (now.getHours() >= 12 ? 1 : 0);
+  // prvý fakt
+  let i1 = (halfDayIndex * 2) % facts.length;
 
-// každý blok spotrebuje 2 fakty
-const baseIndex = halfDayIndex * 2;
-
-  let i1 = baseIndex % facts.length;
-
-  // hľadáme i2 tak, aby mala inú kategóriu
+  // druhý fakt hľadáme ďalej, ale iná kategória
   let i2 = (i1 + 1) % facts.length;
 
-  let attempts = 0;
-  while (
-    facts[i2].category === facts[i1].category &&
-    attempts < facts.length
-  ) {
-    i2 = (i2 + 1) % facts.length;
-    attempts++;
+  while (facts[i2].category === facts[i1].category) {
+    i2++;
+
+    if (i2 >= facts.length) {
+      i2 = 0;
+    }
   }
 
   return [facts[i1], facts[i2]];
 }
-
+  
 // ===== zobrazenie =====
 function render() {
   const result = getDailyFacts();
