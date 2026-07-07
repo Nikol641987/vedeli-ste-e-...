@@ -2254,23 +2254,26 @@ function getDailyFacts() {
 
   const start = new Date(now.getFullYear(), 0, 1);
 
-  // každý 12-hodinový blok má svoje číslo
+  // 12-hodinový blok
   const halfDayIndex = Math.floor(
     (now - start) / (1000 * 60 * 60 * 12)
   );
 
-  // prvý fakt v poradí
-  let i1 = (halfDayIndex * 2) % facts.length;
+  // prvý fakt
+  const i1 = (halfDayIndex * 2) % facts.length;
 
-  // druhý fakt hľadáme tak, aby bol inej kategórie
-  let i2 = (i1 + 1) % facts.length;
+  // druhý fakt - preskočíme ďalej podľa bloku
+  let i2 = (halfDayIndex * 2 + Math.floor(facts.length / 2)) % facts.length;
 
-  while (facts[i2].category === facts[i1].category) {
-    i2++;
+  // kontrola inej kategórie
+  let tries = 0;
 
-    if (i2 >= facts.length) {
-      i2 = 0;
-    }
+  while (
+    facts[i2].category === facts[i1].category &&
+    tries < facts.length
+  ) {
+    i2 = (i2 + 1) % facts.length;
+    tries++;
   }
 
   return [facts[i1], facts[i2]];
