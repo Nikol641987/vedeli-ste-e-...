@@ -2253,14 +2253,16 @@ function getDailyFacts() {
   const now = new Date();
 
   const start = new Date(now.getFullYear(), 0, 1);
+
+  // každý 12-hodinový blok má svoje číslo
   const halfDayIndex = Math.floor(
     (now - start) / (1000 * 60 * 60 * 12)
   );
 
-  // prvý fakt
+  // prvý fakt v poradí
   let i1 = (halfDayIndex * 2) % facts.length;
 
-  // druhý fakt hľadáme ďalej, ale iná kategória
+  // druhý fakt hľadáme tak, aby bol inej kategórie
   let i2 = (i1 + 1) % facts.length;
 
   while (facts[i2].category === facts[i1].category) {
@@ -2291,6 +2293,10 @@ function render() {
 }
 
 render();
+  
+  setInterval(() => {
+  render();
+}, 60000);
 
 </script>
 
