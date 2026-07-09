@@ -2286,6 +2286,10 @@ function render() {
   const f1 = result[0];
   const f2 = result[1];
 
+  console.log("BLOK:", new Date());
+  console.log("FAKT 1:", f1.id, f1.category);
+  console.log("FAKT 2:", f2.id, f2.category);
+
   document.getElementById("cat1").textContent = f1.category;
   document.getElementById("icon1").textContent = f1.icon;
   document.getElementById("text1").textContent = f1.text;
